@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/deltax/lexer.ts"],
+  "sourcesContent": ["import { Token } from \"./token\";\n\nexport class Lexer {\n\t// Extends: CodeManipulator\n\tpublic _code;\n\t\n\tconstructor(code: string) {\n\t\tthis._code = code;\n\t}\n\n\tget code(): string {\n\t\treturn this._code;\n\t}\n\n\tset code(code: string) {\n\t\tthis._code = code;\n\t}\n\n\tparse() {\n\t\tconsole.log(this.code);\n\n\t\tconst length = this.code.length;\n\n\t\tlet pos = 0;\n\t\tlet tokens: Token[] = [];\n\n\t\tconst CORE_FUNCTIONS = [\n\t\t\t\"print\"\n\t\t];\n\n\t\tconst varChars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_';\n\t\t\n\t\twhile (pos < length) {\n\t\t\tlet currentChar = this.code[pos];\n\n\t\t\tif (currentChar in [\" \", \"\\n\"]) {\n\t\t\t\tpos++;\n\t\t\t\tcontinue;\n\t\t\t}\n\n\t\t\t\n\t\t}\n\t}\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAEO,MAAM,MAAM;AAAA,EAEX;AAAA,EAEP,YAAY,MAAc;AACzB,SAAK,QAAQ;AAAA,EACd;AAAA,EAEA,IAAI,OAAe;AAClB,WAAO,KAAK;AAAA,EACb;AAAA,EAEA,IAAI,KAAK,MAAc;AACtB,SAAK,QAAQ;AAAA,EACd;AAAA,EAEA,QAAQ;AACP,YAAQ,IAAI,KAAK,IAAI;AAErB,UAAM,SAAS,KAAK,KAAK;AAEzB,QAAI,MAAM;AACV,QAAI,SAAkB,CAAC;AAEvB,UAAM,iBAAiB;AAAA,MACtB;AAAA,IACD;AAEA,UAAM,WAAW;AAEjB,WAAO,MAAM,QAAQ;AACpB,UAAI,cAAc,KAAK,KAAK;AAE5B,UAAI,eAAe,CAAC,KAAK,IAAI,GAAG;AAC/B;AACA;AAAA,MACD;AAAA,IAGD;AAAA,EACD;AACD;",
+  "names": []
+}

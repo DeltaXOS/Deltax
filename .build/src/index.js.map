@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/index.ts"],
+  "sourcesContent": ["import { DeltaxJS } from \"./deltax/deltax\";\n\nvar deltax = new DeltaxJS();\n\ndeltax.code = `@print \"Hello world\"\n@print(\"Hello world, again\")`;\n\ndeltax.run();"],
+  "mappings": ";AAAA,oBAAyB;AAEzB,IAAI,SAAS,IAAI,uBAAS;AAE1B,OAAO,OAAO;AAAA;AAGd,OAAO,IAAI;",
+  "names": []
+}

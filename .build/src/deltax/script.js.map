@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/deltax/script.ts"],
+  "sourcesContent": ["export class Script {\n\t\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAO,MAAM,OAAO;AAEpB;",
+  "names": []
+}

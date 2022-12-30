@@ -1,0 +1,25 @@
+@print "Hello" "world!";
+@print("Hey, hello world, again!")
+
+var my_var = "Hello"
+var my_other_var = %MY_ENV_VAR%
+
+3 + 4 * 2 // 11
+
+@print _ // This will print the last logical operation result
+
+@print $my_var $my_other_var;
+
+if (_ == 11) {
+	@print "Yeah, 3 + 4 * 2 = 11";
+
+	for (#i, range(0, 20, 2)) {
+		@print $i "of 20";
+	}
+
+	func my_func() {
+		@print "my_func() executed!";
+	}
+
+	&my_func()
+}

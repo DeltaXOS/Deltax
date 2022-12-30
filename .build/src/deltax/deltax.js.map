@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/deltax/deltax.ts"],
+  "sourcesContent": ["import { Lexer } from \"./lexer\";\n\nexport class DeltaxJS {\n\tpublic _code?: string;\n\n\tconstructor() {\n\n\t}\n\n\tget code(): string | undefined {\n\t\treturn this._code;\n\t}\n\n\tset code(code: string | undefined) {\n\t\tthis._code = code;\n\t}\n\n\trun(options?: RunOptions) {\n\t\tif (this.code) {\n\t\t\tvar lexer = new Lexer(this.code);\n\t\t\tlexer.parse();\n\t\t} else {\n\t\t\tthrow new Error(\"No code found\");\n\t\t}\n\t}\n}\n\nexport interface RunOptions {\n\tenv?: DeltaxEnviroment;\n}\n\nexport interface DeltaxEnviroment {\n\tvariables: ENVVariable[];\n}\n\nexport interface ENVVariable {\n\tkey: string;\n\tvalue: string;\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,mBAAsB;AAEf,MAAM,SAAS;AAAA,EACd;AAAA,EAEP,cAAc;AAAA,EAEd;AAAA,EAEA,IAAI,OAA2B;AAC9B,WAAO,KAAK;AAAA,EACb;AAAA,EAEA,IAAI,KAAK,MAA0B;AAClC,SAAK,QAAQ;AAAA,EACd;AAAA,EAEA,IAAI,SAAsB;AACzB,QAAI,KAAK,MAAM;AACd,UAAI,QAAQ,IAAI,mBAAM,KAAK,IAAI;AAC/B,YAAM,MAAM;AAAA,IACb,OAAO;AACN,YAAM,IAAI,MAAM,eAAe;AAAA,IAChC;AAAA,EACD;AACD;",
+  "names": []
+}

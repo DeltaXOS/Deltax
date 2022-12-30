@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.ts"],
+  "sourcesContent": ["import \"./src/index.js\""],
+  "mappings": ";AAAA,iBAAO;",
+  "names": []
+}

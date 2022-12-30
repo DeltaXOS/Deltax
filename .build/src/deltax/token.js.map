@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/deltax/token.ts"],
+  "sourcesContent": ["export class Token {\n\tpublic _type: TokenTypes;\n\tpublic _value: TokenValue;\n\t\n\tconstructor(type: TokenTypes, value: TokenValue) {\n\t\tthis._type = type;\n\t\tthis._value = value;\n\n\t\tconsole.log(`TOKEN: ${type} : ${value}`)\n\t}\n}\n\nexport enum TokenTypes {\n\tSTRING,\n\tCORE_FUNCTION\n}\n\nexport type TokenValue = string | number;"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAO,MAAM,MAAM;AAAA,EACX;AAAA,EACA;AAAA,EAEP,YAAY,MAAkB,OAAmB;AAChD,SAAK,QAAQ;AACb,SAAK,SAAS;AAEd,YAAQ,IAAI,UAAU,UAAU,OAAO;AAAA,EACxC;AACD;AAEO,IAAK,aAAL,kBAAKA,gBAAL;AACN,EAAAA,wBAAA;AACA,EAAAA,wBAAA;AAFW,SAAAA;AAAA,GAAA;",
+  "names": ["TokenTypes"]
+}
